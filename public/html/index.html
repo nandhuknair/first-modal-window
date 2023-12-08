@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal window</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="modal-window">
+    <button class="btn" onclick="btnSubmit()">Submit</button>
+    <div class="modal-container" id="modal">
+        <img src="../img/404-tick.png" alt="tick">
+        <div class="modal-text">
+        <h1>You are successfully signed in </h1>
+        <h1>THANKYOU</h1>
+        <button class="btn-close" onclick="btnClose()">Close</button>
+    </div>
+</div></div>
+<script>
+    
+    let modalWindow = document.getElementById("modal");
+    
+    function btnClose(){
+        modalWindow.classList.remove("modal-popup") 
+}
+    function btnSubmit(){
+       modalWindow.classList.add("modal-popup") 
+    }
+</script>   
+
+</body>
+</html>
